@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+</head>
+<style>
+    /* ⁡⁢⁣⁢  CSS Selectors */
+⁡
+/* ⁡⁣⁢⁣Universal Selector⁡ */
+*{
+  /* margin: 3px; */
+  /* padding: 4px; */
+  box-sizing: border-box
+}
+  /* ⁡⁣⁢⁣Element Selector⁡ */
+  div {
+    border: 1px solid DodgerBlue;
+  }
+
+  /* ⁡⁣⁢⁣Class Selector⁡ */
+  .class {
+    background-color: chartreuse;
+    color: black;
+  }
+
+  /* ⁡⁣⁢⁣Id Selector⁡ */
+  #id {
+    background-color: black;
+    color: chartreuse;
+  }
+
+  /* ⁡⁣⁢⁣Child Selector⁡ */
+  body>P {
+    font-size: 20px;
+    color: blue
+  }
+
+  /* ⁡⁢⁢⁢Diff BTW Descendant Selector And Child Selector is that⁡ 
+⁡⁣⁢⁣The selector in Child Selector has to Be acurate And exact as if it is div > p so Nothing must be between p and div⁡
+⁡⁣⁣⁢ While⁡
+⁡⁣⁢⁣The Selector in  Descendant Selector Dont has to be accurate instead we can specify the parent and child with space and it doesnt matter that if any other tag is between parent and child .⁡ */
+
+  /* ⁡⁣⁢⁣Descendent Selector⁡ */
+  div p {
+    border: 3px solid aquamarine
+  }
+
+  /*⁡⁣⁣⁢ ⁡⁣⁢⁣⁡⁣⁢⁣Attribute⁡ ⁡⁣⁢⁣Selector⁡⁡ ⁡*/
+  [data-x=value]{
+    background-color: chocolate;
+  }
+  [data]{
+    background-color: chocolate;
+  }
+
+  /*⁡⁣⁣⁢ ⁡⁣⁢⁣⁡⁣⁢⁣Pseudo Selector⁡⁡ ⁡*/
+
+  a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: dotted;
+
+  }
+
+  a:visited {
+    color: rgba(0, 255, 221, 0.895);
+    background-color: transparent;
+    text-decoration: line-through;
+  }
+
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: overline;
+  }
+  span:hover{
+    
+    background: #000;
+    opacity:20%;
+  }
+  aside:first-child{
+    background: yellowgreen ;
+  }
+  aside:nth-child(5){
+    background-color: aqua;
+  }
+  .box:nth-child(odd){       
+    background-color: blue;    /* ⁡⁢⁣⁣applies to the ⁡⁢⁣⁣odd like 1st then 3rd⁡⁡ */
+  }
+  .box:nth-last-child(2){     /* ⁡⁢⁣⁣starts counting in descending order⁡ */
+    background-color: red;
+  } 
+  
+  /* ⁡⁢⁣⁣Other CSS Selectors⁡ */
+
+ /* ⁡⁣⁢⁣ Pseudo ⁡ */
+
+  .box::first-line{ /* ⁡⁢⁣⁣applies to the first line⁡ */
+    color: yellow;
+}
+.box::first-letter {     /* ⁡⁢⁣⁣applies to the first letter⁡ */
+  color: peru;
+  font-size: 45px;
+}
+
+::selection {         /* ⁡⁢⁣⁣it is applied when we select the text⁡ */
+  background-color: black;
+  color: aqua;
+}
+
+.boxes::after {  /* ⁡⁢⁣⁣adds content to the end of the element's content⁡ */
+  content: "this is content after";
+  color: red;
+}
+.boxes::before {     /* ⁡⁢⁣⁣adds content to the start of the element's content⁡ */
+  content: "this is content before";
+  color: blue;
+}
+.boxes *{    /* ⁡⁢⁣⁣ applies these properties to the all elements in .boxes⁡ */
+  color: blue;
+  border: 2px solid black;
+}
+/* ⁡⁢⁣⁢Pseudo Element Selector⁡ */
+input::placeholder {              /* ⁡⁢⁣⁣these changes will apply on the placeholder text of the input⁡ */
+  color: rgb(84, 84, 88);
+}
+/* ⁡⁢⁣⁢⁡⁢⁣⁢G⁡⁡⁢⁣⁢rouped selector⁡ */
+p, a, .box, [data-color="primary"]{
+  padding-top: 45px;
+  background-color: blueviolet;
+}
+</style>
+<body>
+
+</body>
+</html>

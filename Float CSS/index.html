@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float</title>
+</head>
+<style>
+    
+/* ⁡⁢⁣⁢Float⁡ */
+/* ⁡⁢⁣⁣The float property specifies how an element should be positioned in relation to other elements.⁡ */
+/* ⁡⁣⁣⁢if float is given to a element the element allows the next content to float next to it.⁡ */
+/* ⁡⁣⁢⁣when float is specified to a element like image it doesnt fit its container automatically and we can fit it with the display property "flow-root" ⁡ */
+.image img{
+  float: right;
+  width: 200px;
+  display: flow-root;
+  
+}
+/* ⁡⁣⁣⁢clear property clears the content of a particular direction to a element⁡ */
+.cards :nth-child(3){
+  clear: right;
+  background-color: bisque;
+}
+</style>
+<body>
+    <div class="cards">
+        <div class="image"><img src="card image.jpg" alt="float right"></div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nostrum perspiciatis, cum aspernatur officiis eaque assumenda, soluta temporibus consequatur quidem vitae sint ipsa </div>
+        <div class="card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati illum impedit recusandae earum nam itaque ab, omnis aperiam cupiditate suscipit tenetur vero corrupti, magnam harum totam hic necessitatibus sed, modi sunt blanditiis natus? Ratione repellat totam dolorem distinctio delectus sint, assumenda hic repudiandae ex ipsum modi accusamus quas autem maxime quod nulla molestiae. Iusto tempora et ipsa? Dolorem eos quod quaerat beatae cumque minima iusto neque accusantium nesciunt expedita totam saepe omnis est cum nostrum repellendus doloremque provident ea, maiores placeat nihil commodi animi dolor nobis! Animi, esse cumque voluptatem harum, maxime, deserunt dolor aperiam fugit enim asperiores aut recusandae.</div>
+        <div class="card"></div>
+    </div>
+</body>
+</html>

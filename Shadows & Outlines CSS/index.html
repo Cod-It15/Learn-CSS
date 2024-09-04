@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHadows</title>
+</head>
+<Style>
+      /* ⁡⁢⁣⁢⁡⁢⁣⁢Box Shadows⁡   */
+  /* ⁡⁣⁣⁢offset shadow⁡ */
+  .box-shadow-offset{
+    border: 2px solid black;
+    box-shadow: 5px 15px 5px grey ;
+  }
+  /* ⁡⁣⁣⁢inset shadow⁡ */
+  .box-shadow-inset{
+    padding: 15px;
+    border: 2px solid black;
+    box-shadow:inset 5px 15px 5px grey ;
+  }
+  /* ⁡⁢⁣⁢Text Shadows */
+  /* ⁡⁡text-shadow */
+  .text-shadow{
+    text-shadow: 12px 6px 9px cyan; 
+  }
+
+
+/* ⁡⁢⁣⁢Outline⁡ */
+.outline{
+    padding: 3px;
+    border: 3px ridge burlywood;
+    border-radius: 25px;
+    /* border-image:url(border.png) ; */
+    outline: 3px solid black;
+    outline-offset: 5px;
+    outline-style: dashed;
+  }
+  /* ⁡⁢⁣⁣Diff btw border and outline is:⁡ */
+  /* 
+  ⁡⁢⁢⁢1. Position:   ⁡       ⁡⁣⁣⁢Outlines don't take up space; they're drawn around the element, outside of any border.⁡
+  ⁡⁢⁢⁢2.Offset: ⁡            ⁡⁣⁣⁢ Using the outline-offset property, you can set the space between an outline and the edge or border of an element.⁡
+  ⁡⁢⁢⁢3.Width: ⁡             ⁡⁣⁣⁢Borders can have varying widths on different sides, outlines have a uniform width.⁡⁡⁣⁣⁢outlines can have different sizes without changing box models⁡
+  ⁡⁢⁢⁢4. Rounded Corners:⁡   ⁡⁣⁣⁢Borders can have rounded corners using border-radius, while outlines generally cannot.the outlines depend on borders */
+
+</Style>
+<body>
+  <h3>Offset Box shadow</h3>
+  <p class="box-shadow-offset">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora vero sed eaque, nesciunt, enim,Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia accusamus hic amet in non, enim asperiores corrupti, deleniti iure eius at cum. Aliquid minus possimus, molestias quia reiciendis similique esse!Lorem error aut reiciendis unde libero tenetur ea. Perspiciatis, fugit iste. Quod, qui numquam? In, natus facere!</p>
+  <h3>Inset Box shadow</h3>
+  <p class="box-shadow-inset">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, odio quaerat. Possimus voluptate error nesciunt excepturi, qui repellendus? Natus minus expedita quas perferendis veritatis cum eos consequuntur magni nemo nobis?</p>
+  <h3>Text shadow</h3>
+  <p class="text-shadow">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, odio quaerat. Possimus voluptate error nesciunt excepturi, qui repellendus? Natus minus expedita quas perferendis veritatis cum eos consequuntur magni nemo nobis?</p>
+  <h3>Outline</h3>
+  <p class="outline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo perspiciatis aut reprehenderit deserunt sapiente ratione suscipit necessitatibus, incidunt sequi at ad? Ut deleniti neque, commodi quidem magnam molestias culpa odit.</p>
+   
+  
+</body>
+</html>

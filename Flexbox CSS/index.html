@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+</head>
+<style>
+    /* ⁡⁢⁣⁢CSS Flexbox
+
+Properties that apply on containers only
+⁡⁡⁢⁣⁡⁢⁣⁣Flexbox is a layout mode that allows you to create flexible⁡ */
+/* ⁡⁣⁣⁢items having a flex property lays them in a flex direction and it can also be changed⁡ */
+.flexbox{
+  /* ⁡⁣⁣⁡⁢⁢⁢flex-direction: row; */
+/* flex-direction: row-reverse;⁡⁡ */
+flex-direction: column;
+/* ⁡⁢⁢⁢flex-direction: column-reverse;⁡⁡ */
+}
+/* ⁡⁢⁣⁣Flex wrap wraps the overflown content to the next line⁡ */
+.flex-wrap{
+ flex-wrap: wrap;
+ /* ⁡⁢⁢⁢flex-wrap: nowrap;⁡ */
+ /* ⁡⁢⁢⁢flex-wrap: wrap-reverse;⁡⁡ */
+}
+/* ⁡⁢⁣⁣Flex Axis⁡ */
+/* ⁡⁣⁣⁢
+-The main axis is in the direction of the lay which is flex direction.
+-the cross axis is perpendicularof the flex direction or main axis.⁡ */
+  /* ⁡⁣⁢⁣justify-content aligns the text to the main axis⁡ */
+/* ⁡⁣⁢⁣align-items aligns the items in a single line to the cross axis⁡ */
+/* ⁡⁣⁢⁣align-content aligns the whole content to the cross axis ⁡⁣⁢⁣ and makes the whole content shown as one and close⁡⁡ */
+
+/* ⁡⁢⁣⁢Flex Flow⁡ */
+/* ⁡⁣⁣⁢⁡⁢⁣⁣flex-flow is a shorthand for flex-direction and flex-wrap / it is a syntax that presents both flex-direction and flex-wrap */
+/* ⁡⁣⁣⁢Syntax : flex-flow: <flex-direction> <flex-wrap>⁡ */
+/* ⁡⁣⁢⁣Example⁡ */
+.flexflow{
+  flex-flow: coloumn wrap;
+}
+/* ⁡⁢⁣⁢Gap⁡ */
+/* ⁡⁢⁣⁣It lays gap btw every item of the content⁡ */
+/* ⁡⁣⁢⁣Example⁡ */
+.gap{
+  gap:20px;
+  row-gap:20px;
+  column-gap:20px;
+}
+/* ⁡⁢⁣⁢Properties that apply on items only⁡ */
+
+/* ⁡⁢⁣⁢Order⁡ */
+/* ⁡⁣⁣⁢ ⁡⁢⁣⁣To arrange the order of the display⁡ */
+⁡ /* ⁡⁣⁢⁣Example⁡ */
+.order{
+  order: 1;
+}
+
+/* ⁡⁢⁣⁢Flex Grow⁡ */
+/* ⁡⁡⁢⁣⁣ It is a property that allows you to specify how much
+the item should grow when there is extra space in the main axis⁡ */
+/* ⁡⁣⁣⁢it specifies how much space does a single item occupy
+the more the flex grow value the more it occupies⁡ */
+/* ⁡⁣⁢⁣Example⁡ */  /* ⁡⁣⁣⁢if i set value of a item to two it will occupy space multiply by 2⁡ */
+.flex-grow{
+  flex-grow: 2;
+}
+
+/* ⁡⁢⁣⁢Flex Shrink⁡ */
+/* ⁡⁣⁣⁡⁢⁣⁣it is a property that allows you to specify how much
+the item should shrink when there is not enough space in the main axis⁡⁡ */
+/* ⁡⁣⁣⁢it specifies how much space does a single item occupy when it shrinks
+the flex shrink value defines the that how much a item can shrink relative to its original size as the view port size decreases*/
+/* ⁡⁣⁢⁡⁣⁢⁣Example⁡⁡ */
+.flex-shrink{  
+  flex-shrink: 2;
+  }
+
+/* ⁡⁢⁣⁢Align Self 
+⁡⁡⁢⁣⁣It only aligns it self⁡ */
+/* ⁡⁣⁢⁣Example⁡ */
+.align-self{
+  align-self: center;
+  }
+  
+</style>
+<body>
+    
+</body>
+</html>

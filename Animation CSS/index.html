@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation CSS</title>
+</head>
+<style>
+    /* CSS Animate */
+    /* Animation are used to do complex transitions */
+    /* Animation is applied with multiple properties  */
+    /* 1.animation-name: Keyframe-name;  name of the animation */
+    /* 2.animation-duration: 3s; how long a animation should be */
+    /* 3.animation-timing-function: ease-in-out; an attribute to specify the speed of an animation */
+    /* 4.animation-iteration-count: infinite; how much  times do a animation should repeat / if infinite it would repeat forever  */
+    /* 5.animation-direction: alternate-reverse;  this changes the direction of animation : if alternate it animation would go both ways ; if reverse the direction will be reversed ; if value is alternate-reverse the direction would reverse and will apply both ways */
+    /* 6.animation-fill-mode:backwards ; we can add animation fill-mode we can change the position of animation after it is passed */
+    /* Shorthand */
+    /* Syntax: animation: <animation-name animation-duration animation-timing-function animation-iteration-count animation-direction animation-fill> */
+
+    /* method 1 : using key frames */
+    /* We have to specify a key frame and its name */
+    /* then we have to add a "from" and "to" property */
+    /* "from{}" specifies where does a animation starts  */
+    /* we must add a css property to which the animation must apply from */
+    /* "to{}" specifies from where does a animation ends  */
+
+
+    @keyframes Keyframe-name {
+        from {
+            transform:translatex(0%) translateY(0%);
+        }
+        
+        to {
+
+            transform:translate(50%)translateY(50%);
+            
+        }
+
+    }
+    
+    /* method2 */
+    /* We have to specify a key frame and its name */
+    /* in this method we can divide a animation in %  */
+    /* we have to appoint each partition a property */
+    @keyframes animation2 {
+        0%{
+            background-color: #0bef9f;
+
+        }
+        30%{
+            background-color: #012ef8;
+        }
+        60%{
+            background-color: #e12323;
+        }
+        
+        100%{
+            background-color: #000000;
+
+        }
+    }
+    .animate {
+        background-color: #8a8484;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        /* transform: translateX(20%); */
+        width: 200px;
+        height: 200px;
+    }
+
+    .box-animate/* :hover */{
+        animation-name: Keyframe-name , animation2; /*  we can assign multiple animations seperated by a comma */
+        animation-duration: 3s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+        animation-direction: normal;
+        animation-iteration-count: 3;
+    }
+
+    .box {
+        color: rgb(245, 204, 151);
+        height: 100px;
+        background-color: #08f8c0;
+        width: 100px;
+    }
+
+</style>
+
+<body>
+    <div class="animate">
+        <div class=" box-animate box">
+            Box 1 <br>(Method 1)
+        </div>
+    </div>
+    
+</body>
+
+</html>

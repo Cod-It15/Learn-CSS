@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-family: cursive;
+
+        }
+
+        /* Css Filters */
+        /* <filter-function> values  */
+        .filter-one {
+            filter: blur(5px);
+        }
+
+        .filter-two {
+            filter: brightness(0.4);
+        }
+
+        .filter-three {
+            filter: contrast(200%);
+        }
+
+        .filter-four {
+            filter: drop-shadow(16px 16px 20px blue);
+        }
+
+        .filter-five {
+            filter: grayscale(50%);
+        }
+
+        .filter-six {
+            filter: hue-rotate(90deg);
+        }
+
+        .filter-seven {
+            filter: invert(75%);
+        }
+
+        .filter-eight {
+            filter: opacity(0.3);
+        }
+
+        .filter-nine {
+            filter: saturate(500%);
+        }
+
+        .filter-ten {
+            filter: sepia(60%);
+        }
+
+        /* URL */
+        .filter-eleven {
+            filter: url("filters.svg#filter-id");
+        }
+
+        /* Multiple filters */
+        .filter-tweleve {
+            filter: contrast(175%) brightness(100%);
+        }
+
+        .filter-thirteen {
+            filter: drop-shadow(3px 3px 16px red) sepia(50%);
+        }
+
+        /* Use no filter */
+        .filter-fourteen {
+            filter: none;
+        }
+    </style>
+</head>
+
+<body>
+    <H1>Blur</H1><br>
+    <img class="filter-one"
+        src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?size=626&ext=jpg"
+        alt=""><br><br><br><br><br><br>
+    <H1>Brightness</H1><br>
+    <img class="filter-two"
+        src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?size=626&ext=jpg"
+        alt=""><br><br><br><br><br><br>
+    <H1>Contrast</H1><br>
+    <img class="filter-three"
+        src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?size=626&ext=jpg"
+        alt=""><br><br><br><br><br><br>
+    <H1>Drop-Shadow</H1><br>
+    <img class="filter-four"
+        src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?size=626&ext=jpg"
+        alt=""><br><br><br><br><br><br>
+    <H1>Grayscale</H1><br>
+    <img class="filter-five"
+        src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?size=626&ext=jpg"
+        alt=""><br><br><br><br><br><br>
+    <H1>Hue-Rotate</H1><br>
+    <img class="filter-six"
+        src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?size=626&ext=jpg"
+        alt=""><br><br><br><br><br><br>
+    <H1>Invert</H1><br>
+    <img class="filter-seven"
+        src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?size=626&ext=jpg"
+        alt=""><br><br><br><br><br><br>
+    <H1>Opacity</H1><br>
+    <img class="filter-eight"
+        src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?size=626&ext=jpg"
+        alt=""><br><br><br><br><br><br>
+    <H1>Saturation</H1><br>
+    <img class="filter-nine"
+        src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?size=626&ext=jpg"
+        alt=""><br><br><br><br><br><br>
+    <H1>Sepia</H1><br>
+    <img class="filter-ten"
+        src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?size=626&ext=jpg"
+        alt=""><br><br><br><br><br><br>
+    <H1>URL Filter</H1><br>
+    <img class="filter-eleven"
+        src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?size=626&ext=jpg"
+        alt="">
+    <H1>Multiple Filter-1</H1><br>
+    <img class="filter-tweleve"
+        src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?size=626&ext=jpg"
+        alt=""><br><br><br><br><br><br>
+    <H1>Multiple Filter-2</H1><br>
+    <img class="filter-thirteen"
+        src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?size=626&ext=jpg"
+        alt=""><br><br><br><br><br><br>
+    <H1>No Filter</H1><br>
+    <img class="filter-fourteen"
+        src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?size=626&ext=jpg"
+        alt="">
+</body>
+
+</html>

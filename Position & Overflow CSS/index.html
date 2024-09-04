@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+</head>
+<style>
+    /* ⁡⁢⁣⁢Css position property⁡ */
+   Position 
+   .position-box1{
+  
+   position:relative; /* it helps the elemnt move and makes it flexible */
+   width: 80vw;
+   height: 20vh; 
+  }
+   .position-box2{
+   position:static; /* it makes th eelement still and any property cant aaply to it */
+   width: 80vw;
+   height: 20vh; 
+  }
+   .position-box3{
+   /* position:absolute; it folows the nearest positioned ancestor/parent  if there isn't any it will follow root element <html> */ /* transform, filter', or perspective properties can also
+make an element appear as positioned parent  */
+   top: 1308px;
+   width: 80vw;
+   height: 20vh;
+  }
+   .position-box4{
+    top: 340px;
+   /* position:fixed; it fixes the position and the box cant move even if it is scrolled */
+   width: 80vw;
+   height: 20vh;
+   margin: 6px;
+  }
+  .position-box5{
+    width: 80vw;
+    height: 10vw;
+    background-color: antiquewhite;
+    position:sticky; /* it it sticks the element to its position and if we scroll down to it the element srays at the top mostly used for navbars*/
+    top:0px;
+    font-family:Josefin Sans,sans-serif ;
+  }  
+  
+  /* ⁡⁢⁣⁢OverFlow ⁡⁣⁢⁣It hides the content which doesn’t fit the box.⁡⁡ */
+  .overflow{
+    background-color: rgb(55, 220, 168);
+            width: 200px;
+            height: 60px;
+            border: 2px solid;
+            /* overflow: hidden; */
+            /* overflow: auto; */
+            /* overflow-y: scroll;/ /* Auto */
+           /*  overflow-x: auto;/*  scroll */ 
+            /* overflow: (x value) (y value) ; */
+            overflow:scroll scroll;
+            text-overflow:ellipsis; /* it is also a property to show the overflow text in dots or hide */
+            /* white-space: nowrap;   */  /* it doesn't let thetext fall down */
+   }
+
+</style>
+<body>
+    <div class="position-box5">Nav Bar</div>
+    <div class="position-box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolor tempora deleniti, fuga sed vero incidunt distinctio ab ea ipsa saepe unde animi enim hic? Asperiores ut accusantium porro veritatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nihil dolore ad sunt explicabo, facilis necessitatibus cum? Est deleniti neque fugiat temporibus so Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi porro velit, perspiciatis minima iure mollitia!</div>
+    <div class="position-box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolor tempora deleniti, fuga sed vero incidunt distinctio ab ea ipsa saepe unde animi enim hic? Asperiores ut accusantium porro veritatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nihil dolore ad sunt explicabo, facilis necessitatibus cum? Est deleniti neque fugiat temporibus so Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi porro velit, perspiciatis minima iure mollitia!</div>
+    <div class="position-box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolor tempora deleniti, fuga sed vero incidunt distinctio ab ea ipsa saepe unde animi enim hic? Asperiores ut accusantium porro veritatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nihil dolore ad sunt explicabo, facilis necessitatibus cum? Est deleniti neque fugiat temporibus so Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi porro velit, perspiciatis minima iure mollitia!</div>
+    <div class="position-box4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolor tempora deleniti, fuga sed vero incidunt distinctio ab ea ipsa saepe unde animi enim hic? Asperiores ut accusantium porro veritatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nihil dolore ad sunt explicabo, facilis necessitatibus cum? Est deleniti neque fugiat temporibus so Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi porro velit, perspiciatis minima iure mollitia!</div>
+
+<br><br><br><br>
+    <div class="overflow" style="border: 2px solid burlywood; width:10vw; height: 30vh;">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, beatae. Aut error ducimus cupiditate amet eum! Doloremque libero dicta assumenda facere modi fugit quam ratione. Ad dolorum cumque eum aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, accusantium voluptate maiores a explicabo quidem ipsum recusandae sapiente expedita eveniet sunt libero illo consequuntur quam suscipit distinctio repellat velit eaque.
+      </div>
+      
+  </body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+</head>
+<style>
+    /* Grid */
+ /* ⁡⁣⁢⁣⁣Grid is a two dimensional layout system⁡
+ ⁡⁡⁢⁣⁣it allows you to arrange items in rows and columns
+ it is a powerful tool for creating complex layouts⁡ */
+ 
+ /* ⁡⁢⁣⁢Properties that apply on containers only⁡ */
+
+ /* ⁡⁢⁣⁣Grid⁡  */
+
+
+/* ⁡⁢⁢⁣Method 1⁡ */
+
+/* ⁡⁣⁣⁢it is used to align contents in a container to a grid⁡ */
+/* ⁡⁣⁢⁣Example⁡ */ /* ⁡⁣⁣⁢it has no change inthe default display if only display grid in applied as it is aligned in only one row⁡ */
+.grid{
+  display: grid;
+}
+/* ⁡⁢⁣⁣Grid-Template-coloumns⁡ */
+/* ⁡⁣⁣⁢it is used to specify the number of columns and the
+gaps between them⁡ */
+/* ⁡⁣⁢⁡⁣⁢⁣Example⁡⁡ */
+.grid-template-columns{       /* fr:frame */
+  grid-template-columns: 1fr 2fr 3fr;
+  }
+  /* ⁡⁢⁣⁣Grid-Template-rows⁡ */
+  /* ⁡⁣⁣⁢it is used to specify the number of rows and the
+  gaps between them⁡ */
+  /* ⁡⁣⁢⁣Example ⁡*/
+  .grid-template-rows{
+  grid-template-rows: 1fr 2fr 3fr;
+  
+  }
+/* ⁡⁢⁣⁣Grid-Track⁡ */
+/* ⁡⁣⁣⁢it is the  area between two grid lines⁡ */
+/* ⁡⁢⁣⁣Grid-Area⁡ */
+/* ⁡⁣⁣⁢it is the area of a grid item⁡ */
+
+
+/* ⁡⁢⁣⁢Properties that apply on items only⁡ */
+
+/* ⁡⁢⁣⁣Grid-Column⁡ */
+/* ⁡⁣⁣⁡⁣⁣⁢it is the column in which a grid item is placed
+it is a grid item property ⁡⁣⁣⁢it can be specified⁡ ⁡*/
+/* ⁡⁣⁢⁣Example⁡ */         /* ⁡⁣⁢⁣it is always specified as <starting value/ending value>⁡ */
+.grid-column{
+  grid-column: 1 / 3;
+  }
+  /* ⁡⁢⁣⁣Grid-row*/
+  /* ⁡⁣⁣⁡⁣⁣⁢it is the row in which a grid item is placed
+  it is a grid item property ⁡⁣⁣⁢it can be specified⁡ ⁡*/
+  /* ⁡⁣⁢⁣Example⁡ */         /* ⁡⁣⁢⁣it is always specified as <starting value/ending value>⁡⁡ */
+  .grid-column{
+    grid-column: 1 / 3;
+    }
+
+    /* ⁡⁣⁢⁣Example including both col and row⁡ */
+.grid-row-col{
+  border: 2px solid aqua;
+  display: grid;
+  grid-template-columns: 60px 60px 60px;
+  /* grid-template-rows: 60px 60px 60px 60px; */
+  grid-template-rows: [start] 60px [line1] 60px [line2] 60px;
+}
+.item{
+  border: 2px solid rgb(0, 0, 0);
+  /* margin: 3px;  */
+  /* width: 55px; */
+ /* height: 55px; */
+  /* background-color: #f6f600; */
+  /* width: fit-content; */
+  /* grid-column: 1/3; */
+
+}
+.item-1{
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+.item-2{
+  grid-column: 3 / 4;
+  grid-row: 1/2 ;
+}
+.item-3{
+  grid-column:  3/4;
+  grid-row: 2 / 4;
+  /* z-index: 8; */
+}
+.item-4{
+  grid-column: 1 / 3;
+  grid-row: 3/4 ;
+}
+.item-5{
+  grid-column: 1 / 4;
+  grid-row: 4 /5 ;
+  /* z-index: 8; */
+}
+
+/* ⁡⁢⁣⁣Variable Names to grid lines⁡ */
+/* ⁡⁣⁣⁢we must write our variable name before the every value of row-template/col-template value  enclosed in []⁡ */
+/* ⁡⁣⁢⁣Example⁡ */
+.variable-name{
+  grid-template-columns: [start] 60px [line1] 60px [line2] 60px;     /* ⁡⁣⁢⁣now we can use these names as values⁡ */
+}
+
+
+/* ⁡⁢⁣⁣Repeat function ⁡ */
+/* ⁡⁣⁣⁢Syntax: 
+.grid-template-columns:repeat(<number of times> <repeat what to repeat>)
+.grid-template-rows:repeat(<number of times> <repeat what to repeat>)⁡ */
+/* ⁡⁣⁢⁣we can repeat the given cols by using the syntax in a grid grid-template-columns / grid-template-rows⁡  */
+/* ⁡⁣⁢⁣Example⁡ */
+.repeat{
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+/* ⁡⁢⁣⁣Minmax⁡ */
+/* ⁡⁣⁣⁢We can also set minmax for space covered by the content ⁡*/
+/* ⁡⁣⁣⁢Syntax: minmax(<min-value> <max-value>
+grid-template-columns: minmax(60px, 1fr);
+grid-template-rows: minmax(60px, 1fr);⁡ */
+/* ⁡⁣⁢⁣Example⁡ */
+.minmax{
+  grid-template-columns: minmax(60px, 1fr);
+  grid-template-rows: minmax(60px, 1fr);
+
+}
+/* ⁡⁢⁢⁣Method 2⁡ */
+
+/* ⁡⁢⁣⁣We can also use the grid by a method of appointing names to grid template area⁡ */
+/* ⁡⁣⁢⁣Example⁡ */
+.method2{
+  width: 200px;
+  grid-template-areas: "nav nav nav"
+        "side empty article"
+        "footer footer footer";
+  display: grid;
+  border: 2px solid yellow;
+}
+/* ⁡⁣⁣⁢now we  have to specify the grid area to each of our items⁡ */
+.items{
+  border: 2px solid rgb(234, 5, 5);
+  /* margin: 3px;  */
+  /* width: 55px; */
+ /* height: 55px; */
+  /* background-color: #f6f600; */
+  /* width: fit-content; */
+  /* grid-column: 1/3; */
+
+}
+
+.items-1{
+  grid-area: nav;
+}
+.items-2{
+  grid-area: article;
+}
+.items-3{
+  grid-area: side;
+}
+.items-4{
+  grid-area: empty;
+}
+.items-5{
+  grid-area: footer;
+}
+
+
+
+/* ⁡⁢⁣⁣fr⁡ */
+/* ⁡⁣⁣⁢it is a specific unit for grid and it shows the fraction of the whole width/height⁡ */
+/* ⁡⁣⁢⁣Example⁡   */
+/* ⁡⁣⁢⁣if i take a value 1fr 2fr 1fr the total width willbe divided into 4 proportions and 1 proportion will be given to the 1st one and 2 proportions must be given to the second and so on  ⁡ */
+
+
+/* ⁡⁢⁣⁣Gap can also be used in grid⁡ */
+
+
+/* ⁡⁢⁣⁢We Can use these  items only⁡ ⁡⁢⁣⁢to align within t⁡⁢⁣⁢he whole container⁡⁡*/
+/* ⁡⁢⁣⁣Align in grid⁡ */
+/* ⁡⁣⁣⁢Use justify-content to align them in their coloumns in the whole container */
+/* Use align-content  to align them in their rows ⁡⁣⁣⁢in the whole container⁡⁡ */
+/* ⁡⁣⁢⁣Use place-content as a shorthand to align both of the upper properties same⁡ */
+
+
+/* ⁡⁢⁣⁢We Can use these  items only⁡ ⁡⁢⁣⁢to align within a grid cell⁡*/
+/* ⁡⁢⁣⁣Align in grid⁡ */
+/* ⁡⁣⁣⁢Use justify-items to align them in their coloumns */
+/* Use align-items  to align them in their rows⁡ */
+/* ⁡⁣⁢⁣Use place-items as a shorthand to align both of the upper properties same⁡ */
+
+
+</style>
+<body>
+    <div class="grid-row-col">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+    </div>
+    <H3>Method 2</H3>
+    <div class="method2">
+        <div class="items items-1">1</div>
+        <div class="items items-2">2</div>
+        <div class="items items-3">3</div>
+        <div class="items items-4">4</div>
+        <div class="items items-5">5</div>
+    </div>
+
+</body>
+</html>

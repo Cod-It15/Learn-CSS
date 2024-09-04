@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+:root{
+    /* Theme 1 */
+    --T1-Col1:aqua;
+    --T1-Col2:black;
+    --T1-Col3:bisque;
+    --T1-text-color:black;
+    
+    /* Theme 2 */
+    --T2-text-color:rgb(0, 255, 0);
+    --T2-Col1:rgb(0, 0, 0);
+    --T2-Col2:rgb(15, 210, 236);
+    --T2-Col3:rgb(203, 237, 7);
+}
+*{
+    margin: 0px;
+}
+body{
+    background-color: var(--T2-Col1);
+    color: var(--T2-text-color);
+}
+
+.navbar{
+    box-sizing: border-box;
+    /* font-weight: 900; */
+    padding: 1px 1px 0px 8px ;
+    height: 10vh;
+    width: 100vw;
+    position: sticky;
+    top: 0px;
+    background-color:var(--T2-Col2);
+}
+.list{
+    display: inline;
+    list-style: none;
+    
+}
+
+.li-item{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
+}
+.li-items{
+    display: inline;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
+}
+.li-items-buttons{
+    display: inline;
+    float: right;
+    padding: 6px;
+    
+}
+.logo-anchor{
+    color: var(--T2-Col3) !important;
+    font-size: 30px;
+    display: block;
+    float: left;
+    text-decoration: none;
+}
+.anchor{
+    font-size: larger;
+    text-decoration: none;
+    padding: 6px 7px 0px 6px;
+    display: block;
+    float: right;
+    color: var(--T2-Col3) !important;
+}
+.login-button{
+    color: var(--T2-Col1);
+    position: relative;
+    bottom: 7px;
+    display: block;
+    float: right;
+    font-family:cursive;
+    font-weight: 500;
+    padding: 4px;
+    display: flex;
+    justify-content: right;
+    border:1px solid grey;
+    border-radius: 8px;
+    box-shadow: 3px 8px 2px ;
+    background-color: var(--T2-Col3);
+}

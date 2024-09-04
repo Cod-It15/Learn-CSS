@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar </title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .nav1{
+        background-color: #0b0b0b;
+        width: 100vw;
+        height: 10vh;
+        position: sticky;
+        box-shadow: 0px 02px 6px grey ;
+        display:flex;
+    }
+    .logo{
+        color: #d0c390;
+        padding: 17px 9px 7px 6px;
+        font-size: x-large;
+    }
+    .nav2{
+        display: flex;
+        width: 100vw;
+        justify-content: right;
+        align-items: center;
+    }
+    .list{
+        list-style: none;
+        display: flex;
+
+    }
+    .items{
+        align-self: center;
+        padding: 0px 9px 0px 6px;
+        /* padding: 3px; */
+
+    }
+    .log-button{
+        margin: 0px 0px 0px 13px;
+        /* place-items: center; */
+        border: 1px solid gray;
+        padding: 4px;
+        border-radius: 18px;
+        background-color: #d0c390;
+        font-family:cursive;
+        font-weight: 500;
+    }
+    .li-link{
+        color: #d0c390;
+        text-decoration: none;
+    }
+
+    input::marker{
+    color: aquamarine;
+    }
+    .hamburger-lines{
+    display: none;
+    line-height: 32px;
+    /* display: ruby; */
+}
+
+</style>
+
+<body>
+    <header class="head">
+        <nav class="nav1">
+            <h3 class="logo">Name</h3>
+            <nav class="nav2">
+                <ul class="list">
+                    <li class="items"><a href="#" class="li-link">Home</a></li>
+                    <li class="items"><a href="#" class="li-link">About</a></li>
+                    <li class="items"><a href="#" class="li-link">Contacts</a></li>
+                    <li><input class="log-button" type="button" value="Login"></li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+    </body>
+
+</html>

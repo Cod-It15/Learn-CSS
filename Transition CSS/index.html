@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+</head>
+<style>
+    /* Transition */
+    /* Transition is applied with 4 properties */
+    /* 1. Transition-Property: The CSS property to be transitioned */
+    /* 2. Transition-Duration: The time it takes to complete the transition */
+    /* 3. Transition-Timing Function: The speed curve of the transition we can make it*/
+    /* 4. Transition-Delay: The delay time after wich a transition is performed */
+    /* Example */
+    
+    /* Short-hand for all these 4 properties together */
+    /* Syntax: <property duration timing-function delay> */
+        .page{
+        display: flex;
+        
+        
+    }
+    .tr-container:hover{
+        transition: all 2s ease-in-out 1s;
+        background-color: #9a2020;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container{
+        background-color:bisque;
+        width: 40vw;
+        height: 40vh;
+    }
+
+    .box{
+        background-color: aquamarine;
+        width: 70px;
+        height: 50px;
+    }
+    .transition:hover{
+        background-color: #86fc00;
+        /* transition-property: transform; */
+        /* transition-property: all;  */  /* if transition-property is set to all it will apply to all the properties on the box */
+        transition-property: background-color, transform;  /* we can also specify multiple properties using a comma*/
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0.5s;
+        transform: translateX(50%) translateY(50%);
+    }
+</style>
+<body><div class="tr-container page">
+    <div class=" container">
+        <div class=" box transition">
+            
+        </div>
+    </div>
+</div>
+</body>
+</html>

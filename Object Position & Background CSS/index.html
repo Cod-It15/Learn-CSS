@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Position & Background</title>
+</head>
+<style>
+    *{
+        padding: 10px;
+    }
+    h4{
+        text-align: center;
+        font-family: cursive;
+    }
+    .page-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container2{
+        background-color: #b5b0b0;
+        width: 550px;
+        height:350px;
+        border: 4px solid rgb(251, 0, 0);
+    }
+    .container{
+        background-color: #b5b0b0;
+        width: 350px;
+        height:350px;
+        border: 4px solid rgb(251, 0, 0);
+    }
+    /* Object-fit  */
+    /* is used to fit a object mostly an image such that its aspect ratio is not disturbed */
+    /* Example */
+        img{
+        height: 350px;  /* ) */ 
+                        /* )-->  if i apply these sizes only the aspect ratio of the img will be spoiled */
+        width: 350px;   /* ) */
+        object-fit: fill;    /* )--> the default property of object and it disturbs the aspect ratio */
+        object-fit: contain; /* )--> displays whole image but leaves space in the box */
+        object-fit: cover;   /* )--> displays a specific portion image and in default shows the center part of the image */
+          /* : */
+          /* :--> We can specify which part of image should be displayed */
+          object-position: bottom left; /* ) */ 
+          object-position: top left;    /* ) */
+          /* )--> ⁡⁣⁢⁣any one of these⁡ */
+          object-position: top right;   /* ) */
+          object-position: bottom right;/* ) */ 
+          
+        }
+        /* Background */
+        /* we can set a bg image */
+        .bg-image{
+            text-align: center;
+            height: 350px; /* ) */
+                           /* )--> comment it out when trying content-box */
+            width: 550px;  /* ) */
+            background-image: url("https://us.123rf.com/450wm/progressman/progressman1909/progressman190900115/130695651-woman-in-black-coat-walking-along-the-sea.jpg?ver=6");
+            background-repeat:no-repeat; /* )--> prevents small images to be repeated */
+            background-position: center center; /* )--> postions small background-images in oversufficient sized boxes */
+            background-clip: border-box; /* )--> clips the bg image to the appointed property i.e:content,padding-box only condition is that size must ot be set */
+        }
+</style>
+<body>
+    <h4>Object-Fit & Object-position</h4>
+    <div class="page-content">
+        <div class="container"><img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="" ></div>
+    </div>
+    <h4>Bg - Image</h4>
+    <div class="page-content">
+    <div class="container2">
+    <div class="bg-image">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates explicabo incidunt ullam natus nobis id cum. Quia, earum molestiae illo soluta ipsa vero hic consectetur asperiores iure ipsum quod.</div>
+    </div>
+    </div>
+</body>
+</html>

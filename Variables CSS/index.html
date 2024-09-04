@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+</head>
+<style>
+    /* ⁡⁢⁣⁢CSS  Variables⁡ */
+  /* ⁡⁢⁣⁣css variables  are used to determine/declare values of properties⁡ */
+  /* ⁡⁣⁣⁢we add the variables with double hyphens (--) at the start and it is enclosed in⁡ ⁡⁣⁢⁣a:root{}⁡ */
+  :root{
+    --color:aqua;  /* ⁡⁣⁢⁣this is a global variable⁡ */
+    --display:9px;   
+    --visibility: hidden;
+  }
+  /* ⁡⁣⁢⁣h3{ */
+  /* text-indent:  var(--display); */
+  /* visibility: var(--visibility) */
+  /* } */⁡
+  
+  /* ⁡⁢⁣⁣if we specify value to a variable in a specific selector it becomes it's specific variable⁡ */
+
+  h4{
+    --color:blue;
+    --display: 10px;
+}
+
+</style>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+</head>
+<style>
+    
+    * {
+        margin: 9px;
+        /* padding: 15px; */
+    }
+
+    .box {
+        height: 300px;
+        display: flex;
+        place-content: center;
+        border: 2px solid black;
+    }
+    
+    /* ⁡⁢⁣⁢Transform in CSS⁡  */
+    /* ⁡⁣⁣⁢⁡⁢⁣⁣Transform is used to change the appearance of an element
+    it can be used to rotate, scale, move, skew⁡⁢⁣⁣, translate⁡⁡ */
+    /* ⁡⁣⁣⁢We can Use transform for changing the dirction of a elemnt through its grid axis⁡ */
+    
+    /* ⁡⁢⁢⁢Rotate⁡ */
+    /* ⁡⁢⁣⁣it rotates the item along all axis if we only write rotate⁡ */
+    /* ⁡⁣⁢⁣Example⁡ */
+    .rotate {
+        border: 2px solid grey;
+        /* transform: rotate(45deg); */
+        transform: rotate(0.75turn);  /* ⁡⁣⁢⁣ turn is another unit and specifies how times the content must turn⁡ */
+        height: 70px;
+        width: 60px;
+        
+    }
+    
+    .translate {
+        border: 2px solid grey;
+        /* transform: translateY(90px); */
+        /* transform: translateX(90px); */
+        transform: translateY(90%);      /* ⁡⁣⁢⁣ % is another unit and specifies how much percent does a elment must move withrespect to its original width/hieght⁡*/
+
+        /* transform: translateZ(90px); */
+        height: 40px;
+        width: 80px;
+        
+        
+    }
+    /* ⁡⁢⁡⁢⁢⁢Skew⁡⁡ */
+    /* ⁡⁢⁣⁣it streches the box / content from the specified axis⁡ */
+    /* ⁡⁣⁢⁣Example⁡ */
+    .skew{
+        border: 2px solid grey;
+        transform:skewX(40deg);
+        /* transform:skewY(40deg); */
+        height: 40px;
+        width: 80px;
+        
+        
+    }
+    /* ⁡⁢⁢⁢Scale⁡⁡ */
+    /* ⁡⁢⁣⁣it increases he size of the box or content   , the unit used in the scale value is the number and the greater the number is the more multiplied by its original size will be ⁡ */
+    /* ⁡⁣⁢⁣Example⁡ */
+    .scale{
+        border: 2px solid grey;
+        transform:scaleX(0.5);
+        transform:scaleY(0.5px);
+        /* transform:scale(2);      ⁡⁣⁢⁣it means twice the original size⁡ */
+        height: 40px;
+        width: 80px;
+    }
+    
+/* ⁡⁣⁣⁢We can also add multiple transform values these in 3D by adding 3d⁡ */
+/* ⁡⁡⁣⁢⁣Example⁡ */
+.multiple {
+    border: 2px solid blue;
+    transform: rotate(45deg) scale(1.5) translateX(15px) skew(12deg);
+    width: 89px;
+    display: flex;
+    place-content: center;
+    /* height: 0.75em; */
+    height: fit-content;
+}
+
+/* ⁡⁢⁣⁢Origin⁡ */
+/* ⁡⁣⁢⁣Example⁡ */
+.transform-origin{
+    border: 2px solid red;
+    width: 70px;
+    height: 70px;
+    transform: rotate(45deg);
+    transform-origin: -20% 30%;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+
+</style>
+
+<body>
+    <h1>Rotate</h1>
+    <br>
+    <div class="box">
+        <div class="rotate">
+            Rotate Box
+        </div>
+    </div>
+    <h1>Translate</h1>
+    <br>
+    <div class="box">
+        <div class="translate">
+            translate/move Box
+        </div>
+    </div>
+    <h1>Skew</h1>
+    <br>
+    <div class="box">
+        <div class="skew">
+            skew Box
+        </div>
+    </div>
+    <h1>Scale</h1>
+    <br>
+    <div class="box">
+        <div class="scale">
+            scale Box
+        </div>
+    </div>
+    <h1>Multiple properties</h1>
+    <br>
+    <div class="box">
+        <div class="multiple">
+            Result
+        </div>
+    </div>
+    <br><br><br>
+    <hr style="border: 2px solid;">
+    <br><br><br>
+    <h1>
+        Transform Origin
+    </h1> 
+    Origin is the point at which a transform is applied it is indicated by percent that how much percent of the total size in the size of element
+    <div class="box">
+        <div class="transform-origin">
+            Origin
+        </div>
+    </div>
+</body>
+
+</html>
